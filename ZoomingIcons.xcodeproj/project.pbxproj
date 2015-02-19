@@ -81,13 +81,10 @@
 		B2C510261A96909D00239B14 /* ZoomingIcons */ = {
 			isa = PBXGroup;
 			children = (
-				B2C5102B1A96909D00239B14 /* AppDelegate.h */,
-				B2C5102C1A96909D00239B14 /* AppDelegate.m */,
 				B2C5102E1A96909D00239B14 /* ViewController.h */,
 				B2C5102F1A96909D00239B14 /* ViewController.m */,
 				B2C510311A96909D00239B14 /* Main.storyboard */,
 				B2C510341A96909D00239B14 /* Images.xcassets */,
-				B2C510361A96909D00239B14 /* LaunchScreen.xib */,
 				B2C510271A96909D00239B14 /* Supporting Files */,
 			);
 			path = ZoomingIcons;
@@ -96,6 +93,9 @@
 		B2C510271A96909D00239B14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2C5102B1A96909D00239B14 /* AppDelegate.h */,
+				B2C5102C1A96909D00239B14 /* AppDelegate.m */,
+				B2C510361A96909D00239B14 /* LaunchScreen.xib */,
 				B2C510281A96909D00239B14 /* Info.plist */,
 				B2C510291A96909D00239B14 /* main.m */,
 			);
@@ -414,6 +414,7 @@
 				B2C510491A96909D00239B14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2C5104A1A96909D00239B14 /* Build configuration list for PBXNativeTarget "ZoomingIconsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				B2C5104C1A96909D00239B14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
