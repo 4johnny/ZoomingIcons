@@ -10,6 +10,17 @@
 
 
 #
+# pragma mark - Protocol
+#
+
+@protocol ZoomingIconTransitionViewHierarchy <NSObject>
+
+@property (strong, nonatomic) IBOutlet UIView* socialItemView;
+@property (weak, nonatomic) IBOutlet UIImageView* socialItemImageView;
+
+@end
+
+#
 # pragma mark - Interface
 #
 

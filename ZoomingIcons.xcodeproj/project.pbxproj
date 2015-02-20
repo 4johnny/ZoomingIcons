@@ -104,12 +104,12 @@
 		B2C510261A96909D00239B14 /* ZoomingIcons */ = {
 			isa = PBXGroup;
 			children = (
+				B22F19351A971D9A0078FCD5 /* ZoomingIconTransition.h */,
+				B22F19361A971D9A0078FCD5 /* ZoomingIconTransition.m */,
 				B22F19241A9693D60078FCD5 /* MenuViewController.h */,
 				B22F19251A9693D60078FCD5 /* MenuViewController.m */,
 				B22F19271A96A9E00078FCD5 /* SocialItemCell.h */,
 				B22F19281A96A9E00078FCD5 /* SocialItemCell.m */,
-				B22F19351A971D9A0078FCD5 /* ZoomingIconTransition.h */,
-				B22F19361A971D9A0078FCD5 /* ZoomingIconTransition.m */,
 				B22F19321A970EAB0078FCD5 /* DetailViewController.h */,
 				B22F19331A970EAB0078FCD5 /* DetailViewController.m */,
 				B2C510311A96909D00239B14 /* Main.storyboard */,

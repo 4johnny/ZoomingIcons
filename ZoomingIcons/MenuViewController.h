@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZoomingIconTransition.h"
 
 #
 # pragma mark - Interface
 #
 
-@interface MenuViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout>
+@interface MenuViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout, ZoomingIconTransitionViewHierarchy>
+
+@property (strong, nonatomic) IBOutlet UIView* socialItemView;
+@property (weak, nonatomic) IBOutlet UIImageView* socialItemImageView;
 
 @end

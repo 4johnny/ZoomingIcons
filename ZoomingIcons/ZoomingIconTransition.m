@@ -31,7 +31,20 @@ static const NSTimeInterval kZoomingIconTransitionDuration = 1; // seconds
 #
 
 
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController*)navigationController
+								  animationControllerForOperation:(UINavigationControllerOperation)operation
+											   fromViewController:(UIViewController*)fromVC
+												 toViewController:(UIViewController*)toVC {
+
+	if (![fromVC conformsToProtocol:@protocol(ZoomingIconTransitionViewHierarchy)]) {
+		NSLog(@"Source view controller does not conform to zooming icon transition view hierachy: %@", fromVC);
+		return nil;
+	}
+		
+	if (![toVC conformsToProtocol:@protocol(ZoomingIconTransitionViewHierarchy)]) {
+		NSLog(@"Destination viewController does not conform to zooming icon transition view hierachy: %@", toVC);
+		return nil;
+	}
 	
 	return self;
 }
@@ -72,7 +85,8 @@ static const NSTimeInterval kZoomingIconTransitionDuration = 1; // seconds
 	toViewController.nameLabelBottomConstraint.constant = -400;
 	CGFloat summaryLabelBottomConstraint = toViewController.summaryLabelBottomConstraint.constant;
 	toViewController.summaryLabelBottomConstraint.constant = -400;
-	
+		
+	// Trigger layout if needed
 	[toViewController.view layoutIfNeeded];
 	
 	// Animate transitions
@@ -88,6 +102,7 @@ static const NSTimeInterval kZoomingIconTransitionDuration = 1; // seconds
 		toViewController.nameLabelBottomConstraint.constant = nameLabelBottomConstraint;
 		toViewController.summaryLabelBottomConstraint.constant = summaryLabelBottomConstraint;
 
+		// Trigger layout if needed
 		[toViewController.view layoutIfNeeded];
 		
 	} completion:nil];
