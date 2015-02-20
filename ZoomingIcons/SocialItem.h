@@ -9,11 +9,26 @@
 #import <UIKit/UIKit.h>
 
 
+#
+# pragma mark - Interface
+#
+
 @interface SocialItem : NSObject
 
-@property (nonatomic) UIImage* image;
-@property (nonatomic) UIColor* color;
+#
+# pragma mark Properties
+#
+
 @property (nonatomic) NSString* name;
 @property (nonatomic) NSString* summary;
+@property (nonatomic) UIImage* image;
+@property (nonatomic) UIColor* color;
+
+
+#
+# pragma mark Initializers
+#
+
++ (instancetype)socialItemWithName:(NSString*)name andSummary:(NSString*)summary andImage:(UIImage*)image andColor:(UIColor*)color;
 
 @end

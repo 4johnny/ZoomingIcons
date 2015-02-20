@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocialItem.h"
 
 #
 # pragma mark - Interface
@@ -18,7 +19,18 @@
 # pragma mark Properties
 #
 
+@property (nonatomic) SocialItem* socialItem;
+
 @property (weak, nonatomic) IBOutlet UIView *socialItemCellView;
 @property (weak, nonatomic) IBOutlet UIImageView *socialItemImageView;
 
+#
+# pragma mark Initializers
+#
+
+- (instancetype)initWithFrame:(CGRect)frame andSocialItem:(SocialItem*)socialItem;
+- (instancetype)init;
+
++ (instancetype)socialItemCellWithFrame:(CGRect)frame andSocialItem:(SocialItem*)socialItem;
+	
 @end

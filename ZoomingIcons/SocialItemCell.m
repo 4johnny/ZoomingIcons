@@ -7,6 +7,16 @@
 //
 
 #import "SocialItemCell.h"
+#import "SocialItem.h"
+
+
+#
+# pragma mark - Interface
+#
+
+@interface SocialItemCell ()
+
+@end
 
 
 #
@@ -15,6 +25,49 @@
 
 
 @implementation SocialItemCell
+
+
+#
+# pragma mark Property Accessors
+#
+
+
+- (void)setSocialItem:(SocialItem*)socialItem {
+
+	_socialItem = socialItem;
+
+	self.socialItemImageView.image = _socialItem.image;
+	self.socialItemCellView.backgroundColor = _socialItem.color;
+}
+
+
+#
+# pragma mark Initializers
+#
+
+
+- (instancetype)initWithFrame:(CGRect)frame andSocialItem:(SocialItem*)socialItem {
+	
+	self = [super initWithFrame:frame];
+	if (self) {
+
+		_socialItem = socialItem;
+	}
+	
+	return self;
+}
+
+
+- (instancetype)init {
+	
+	return [self initWithFrame:CGRectZero andSocialItem:nil];
+}
+
+
++ (instancetype)socialItemCellWithFrame:(CGRect)frame andSocialItem:(SocialItem*)socialItem {
+	
+	return [[SocialItemCell alloc] initWithFrame:frame andSocialItem:socialItem];
+}
 
 
 #
