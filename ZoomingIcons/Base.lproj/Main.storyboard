@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gfO-eh-XS3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bpt-L0-hsH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--Menu View Controller-->
         <scene sceneID="1iG-Qc-18c">
             <objects>
-                <collectionViewController storyboardIdentifier="menuViewController" id="gfO-eh-XS3" customClass="MenuViewController" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="menuViewController" title="Menu View Controller" id="gfO-eh-XS3" customClass="MenuViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" id="kkc-ob-has">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                         <view contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQ6-Oi-wQU">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <subviews>
-                                                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D7S-Xg-hm9">
+                                                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-youtube" translatesAutoresizingMaskIntoConstraints="NO" id="D7S-Xg-hm9">
                                                     <rect key="frame" x="20" y="20" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
@@ -50,10 +50,75 @@
                             <outlet property="delegate" destination="gfO-eh-XS3" id="xyx-BS-fP6"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="Z4Z-UM-Nfh"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tY-yC-sMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="386" y="331"/>
+            <point key="canvasLocation" x="1198" y="331"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="neo-Am-5dn">
+            <objects>
+                <viewController storyboardIdentifier="detailViewController" title="Detail View Controller" id="gIb-O3-lOj" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OnD-tB-yMn"/>
+                        <viewControllerLayoutGuide type="bottom" id="4wK-KJ-lj2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="leC-wt-pkD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-twitter" translatesAutoresizingMaskIntoConstraints="NO" id="I7x-jW-nSX">
+                                <rect key="frame" x="213" y="120" width="175" height="175"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjM-Oc-Mk7">
+                                <rect key="frame" x="16" y="28" width="13" height="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="icon-back"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Twitter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Uh-6c-hif">
+                                <rect key="frame" x="268" y="384" width="64" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whm-RW-Gt9">
+                                <rect key="frame" x="48" y="419" width="509" height="121"/>
+                                <string key="text">Twitter is an online social networking service that enables users to send and read short 140-character messages called \"tweets\".</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m29-Br-N1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902" y="331"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cvj-jd-zjm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Bpt-L0-hsH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="INq-6U-qbB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gfO-eh-XS3" kind="relationship" relationship="rootViewController" id="oex-tM-XjW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l73-KB-ZSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488" y="331"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon-back" width="13" height="21"/>
+        <image name="icon-twitter" width="200" height="166"/>
+        <image name="icon-youtube" width="164" height="201"/>
+    </resources>
 </document>
