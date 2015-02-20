@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22F19261A9693D60078FCD5 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22F19251A9693D60078FCD5 /* MenuViewController.m */; };
+		B22F19291A96A9E00078FCD5 /* MenuViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B22F19281A96A9E00078FCD5 /* MenuViewCell.m */; };
+		B22F192C1A96ADED0078FCD5 /* Floating-Heads.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22F192A1A96ADED0078FCD5 /* Floating-Heads.xcassets */; };
+		B22F192D1A96ADED0078FCD5 /* Zooming-Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22F192B1A96ADED0078FCD5 /* Zooming-Icons.xcassets */; };
 		B2C5102A1A96909D00239B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C510291A96909D00239B14 /* main.m */; };
 		B2C5102D1A96909D00239B14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C5102C1A96909D00239B14 /* AppDelegate.m */; };
-		B2C510301A96909D00239B14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C5102F1A96909D00239B14 /* ViewController.m */; };
 		B2C510331A96909D00239B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C510311A96909D00239B14 /* Main.storyboard */; };
 		B2C510351A96909D00239B14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2C510341A96909D00239B14 /* Images.xcassets */; };
 		B2C510381A96909D00239B14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C510361A96909D00239B14 /* LaunchScreen.xib */; };
@@ -27,13 +30,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B22F19241A9693D60078FCD5 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		B22F19251A9693D60078FCD5 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		B22F19271A96A9E00078FCD5 /* MenuViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewCell.h; sourceTree = "<group>"; };
+		B22F19281A96A9E00078FCD5 /* MenuViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewCell.m; sourceTree = "<group>"; };
+		B22F192A1A96ADED0078FCD5 /* Floating-Heads.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Floating-Heads.xcassets"; sourceTree = "<group>"; };
+		B22F192B1A96ADED0078FCD5 /* Zooming-Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Zooming-Icons.xcassets"; sourceTree = "<group>"; };
 		B2C510241A96909D00239B14 /* ZoomingIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomingIcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C510281A96909D00239B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2C510291A96909D00239B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2C5102B1A96909D00239B14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2C5102C1A96909D00239B14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B2C5102E1A96909D00239B14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B2C5102F1A96909D00239B14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B2C510321A96909D00239B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2C510341A96909D00239B14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B2C510371A96909D00239B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -81,10 +88,13 @@
 		B2C510261A96909D00239B14 /* ZoomingIcons */ = {
 			isa = PBXGroup;
 			children = (
-				B2C5102E1A96909D00239B14 /* ViewController.h */,
-				B2C5102F1A96909D00239B14 /* ViewController.m */,
+				B22F19241A9693D60078FCD5 /* MenuViewController.h */,
+				B22F19251A9693D60078FCD5 /* MenuViewController.m */,
+				B22F19271A96A9E00078FCD5 /* MenuViewCell.h */,
+				B22F19281A96A9E00078FCD5 /* MenuViewCell.m */,
 				B2C510311A96909D00239B14 /* Main.storyboard */,
-				B2C510341A96909D00239B14 /* Images.xcassets */,
+				B22F192A1A96ADED0078FCD5 /* Floating-Heads.xcassets */,
+				B22F192B1A96ADED0078FCD5 /* Zooming-Icons.xcassets */,
 				B2C510271A96909D00239B14 /* Supporting Files */,
 			);
 			path = ZoomingIcons;
@@ -93,6 +103,7 @@
 		B2C510271A96909D00239B14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2C510341A96909D00239B14 /* Images.xcassets */,
 				B2C5102B1A96909D00239B14 /* AppDelegate.h */,
 				B2C5102C1A96909D00239B14 /* AppDelegate.m */,
 				B2C510361A96909D00239B14 /* LaunchScreen.xib */,
@@ -200,6 +211,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2C510331A96909D00239B14 /* Main.storyboard in Resources */,
+				B22F192D1A96ADED0078FCD5 /* Zooming-Icons.xcassets in Resources */,
+				B22F192C1A96ADED0078FCD5 /* Floating-Heads.xcassets in Resources */,
 				B2C510381A96909D00239B14 /* LaunchScreen.xib in Resources */,
 				B2C510351A96909D00239B14 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2C510301A96909D00239B14 /* ViewController.m in Sources */,
 				B2C5102D1A96909D00239B14 /* AppDelegate.m in Sources */,
+				B22F19291A96A9E00078FCD5 /* MenuViewCell.m in Sources */,
 				B2C5102A1A96909D00239B14 /* main.m in Sources */,
+				B22F19261A9693D60078FCD5 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
