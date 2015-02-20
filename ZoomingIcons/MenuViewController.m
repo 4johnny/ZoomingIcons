@@ -8,6 +8,7 @@
 
 #import "MenuViewController.h"
 #import "SocialItemCell.h"
+#import "DetailViewController.h"
 
 
 #
@@ -125,6 +126,15 @@ static NSString * const reuseIdentifier = @"socialItemCell";
  return YES;
  }
  */
+
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+	
+	DetailViewController* detailViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"detailViewController"];
+	
+	[self.navigationController pushViewController:detailViewController animated:YES];
+}
+
 
 /*
  // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item

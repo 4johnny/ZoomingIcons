@@ -10,4 +10,6 @@
 
 @interface DetailViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *backButtton;
+
 @end

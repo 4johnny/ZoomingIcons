@@ -34,4 +34,11 @@
 }
 */
 
+
+- (IBAction)backPressed:(UIButton *)sender {
+
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
+
 @end
