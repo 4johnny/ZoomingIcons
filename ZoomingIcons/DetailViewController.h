@@ -26,9 +26,16 @@
 #
 
 @property (strong, nonatomic) IBOutlet UIView *socialItemView;
-@property (weak, nonatomic) IBOutlet UIButton *backButtton;
+
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *backButtonTopConstraint;
+
 @property (weak, nonatomic) IBOutlet UIImageView *socialItemImageView;
+
 @property (weak, nonatomic) IBOutlet UILabel *socialItemNameLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *nameLabelBottomConstraint;
+
 @property (weak, nonatomic) IBOutlet UILabel *socialItemSummaryLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *summaryLabelBottomConstraint;
 
 @end

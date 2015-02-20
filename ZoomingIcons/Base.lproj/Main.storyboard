@@ -76,8 +76,12 @@
                                     <constraint firstAttribute="width" constant="175" id="IIf-PI-f8R"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjM-Oc-Mk7">
-                                <rect key="frame" x="16" y="28" width="13" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjM-Oc-Mk7">
+                                <rect key="frame" x="20" y="40" width="13" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="13" id="aRs-a5-SxK"/>
+                                    <constraint firstAttribute="height" constant="22" id="zh8-W2-Qaz"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="icon-back"/>
                                 <connections>
@@ -104,6 +108,7 @@
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="I7x-jW-nSX" secondAttribute="centerX" id="O32-3I-zZW"/>
+                            <constraint firstItem="ZjM-Oc-Mk7" firstAttribute="top" secondItem="OnD-tB-yMn" secondAttribute="bottom" constant="20" id="P4I-Qi-yQM"/>
                             <constraint firstItem="whm-RW-Gt9" firstAttribute="leading" secondItem="leC-wt-pkD" secondAttribute="leadingMargin" constant="30" id="So8-FM-fgQ"/>
                             <constraint firstItem="4wK-KJ-lj2" firstAttribute="top" secondItem="whm-RW-Gt9" secondAttribute="bottom" constant="60" id="VZK-bs-WgX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="whm-RW-Gt9" secondAttribute="trailing" constant="30" id="cUz-zp-3s4"/>
@@ -111,15 +116,19 @@
                             <constraint firstItem="whm-RW-Gt9" firstAttribute="top" secondItem="0Uh-6c-hif" secondAttribute="bottom" constant="8" symbolic="YES" id="jAg-kp-UCw"/>
                             <constraint firstAttribute="centerX" secondItem="whm-RW-Gt9" secondAttribute="centerX" id="jEg-Qg-TAX"/>
                             <constraint firstItem="I7x-jW-nSX" firstAttribute="top" secondItem="OnD-tB-yMn" secondAttribute="bottom" constant="100" id="rCF-ck-WfN"/>
+                            <constraint firstItem="ZjM-Oc-Mk7" firstAttribute="leading" secondItem="leC-wt-pkD" secondAttribute="leading" constant="20" id="rjw-eH-Kz5"/>
                             <constraint firstAttribute="centerX" secondItem="0Uh-6c-hif" secondAttribute="centerX" id="vSH-2g-RNe"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backButtton" destination="ZjM-Oc-Mk7" id="ylV-JW-T4u"/>
+                        <outlet property="backButton" destination="ZjM-Oc-Mk7" id="RS3-rP-7g3"/>
+                        <outlet property="backButtonTopConstraint" destination="P4I-Qi-yQM" id="hYr-Us-Q3V"/>
+                        <outlet property="nameLabelBottomConstraint" destination="jAg-kp-UCw" id="jTZ-oE-cgI"/>
                         <outlet property="socialItemImageView" destination="I7x-jW-nSX" id="oBM-4Y-CVj"/>
                         <outlet property="socialItemNameLabel" destination="0Uh-6c-hif" id="w5a-wX-vdO"/>
                         <outlet property="socialItemSummaryLabel" destination="whm-RW-Gt9" id="Mog-bv-cHP"/>
                         <outlet property="socialItemView" destination="leC-wt-pkD" id="rd1-l3-Cyg"/>
+                        <outlet property="summaryLabelBottomConstraint" destination="VZK-bs-WgX" id="xdh-FM-hk9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m29-Br-N1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
