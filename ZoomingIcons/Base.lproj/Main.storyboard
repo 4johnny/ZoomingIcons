@@ -19,7 +19,7 @@
                             <inset key="sectionInset" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="menuViewCell" id="xBp-sF-crT" customClass="MenuViewCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="socialItemCell" id="xBp-sF-crT" customClass="SocialItemCell">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -29,7 +29,7 @@
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQ6-Oi-wQU">
                                             <rect key="frame" x="0.0" y="0.0" width="234" height="221"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-instagram" translatesAutoresizingMaskIntoConstraints="NO" id="D7S-Xg-hm9">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D7S-Xg-hm9">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                 </imageView>
                                             </subviews>
@@ -39,8 +39,8 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <outlet property="menuViewCellView" destination="aQ6-Oi-wQU" id="Xl8-lx-9Gn"/>
-                                    <outlet property="menuViewImageView" destination="D7S-Xg-hm9" id="Lr0-ri-lND"/>
+                                    <outlet property="socialItemCellView" destination="aQ6-Oi-wQU" id="snd-ec-bQR"/>
+                                    <outlet property="socialItemImageView" destination="D7S-Xg-hm9" id="QfN-zX-JeO"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -55,7 +55,4 @@
             <point key="canvasLocation" x="386" y="331"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="icon-instagram" width="200" height="200"/>
-    </resources>
 </document>

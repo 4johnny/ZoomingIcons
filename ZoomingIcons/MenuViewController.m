@@ -7,7 +7,7 @@
 //
 
 #import "MenuViewController.h"
-#import "MenuViewCell.h"
+#import "SocialItemCell.h"
 
 
 #
@@ -38,7 +38,7 @@
 @implementation MenuViewController
 
 
-static NSString * const reuseIdentifier = @"menuViewCell";
+static NSString * const reuseIdentifier = @"socialItemCell";
 
 
 #
@@ -93,10 +93,9 @@ static NSString * const reuseIdentifier = @"menuViewCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 	
-    MenuViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    SocialItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
-	
     
     return cell;
 }
@@ -155,6 +154,7 @@ static NSString * const reuseIdentifier = @"menuViewCell";
 	
 	return UIEdgeInsetsMake(VERTICAL_PADDING, left, VERTICAL_PADDING, right);
 }
+
 
 
 @end
