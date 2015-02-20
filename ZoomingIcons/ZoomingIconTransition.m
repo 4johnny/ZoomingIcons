@@ -25,6 +25,17 @@ static const NSTimeInterval kZoomingIconTransitionDuration = 1; // seconds
 
 
 #
+# pragma mark <UINavigationControllerDelegate>
+#
+
+
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
+	
+	return self;
+}
+
+
+#
 # pragma mark <UIViewControllerAnimatedTransitioning>
 #
 
@@ -53,20 +64,7 @@ static const NSTimeInterval kZoomingIconTransitionDuration = 1; // seconds
 		
 		toViewController.view.alpha = 1;
 		
-	} completion:^(BOOL finished) {
-		
-	}];
-}
-
-
-#
-# pragma mark <UINavigationControllerDelegate>
-#
-
-
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
-	
-	return self;
+	} completion:nil];
 }
 
 

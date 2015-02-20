@@ -21,6 +21,10 @@
 
 @property (nonatomic) SocialItem* socialItem;
 
+#
+# pragma mark Outlets
+#
+
 @property (weak, nonatomic) IBOutlet UIView *socialItemCellView;
 @property (weak, nonatomic) IBOutlet UIImageView *socialItemImageView;
 

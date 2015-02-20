@@ -41,6 +41,11 @@
 @implementation MenuViewController
 
 
+#
+# pragma mark Constants
+#
+
+
 static NSString * const reuseIdentifier = @"socialItemCell";
 
 
@@ -132,6 +137,9 @@ static NSString * const reuseIdentifier = @"socialItemCell";
 	
 	DetailViewController* detailViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"detailViewController"];
 	
+	// Inject social item data model into detail view controller
+	detailViewController.socialItem = self.socialItems[indexPath.section][indexPath.item];
+	
 	[self.navigationController pushViewController:detailViewController animated:YES];
 }
 
@@ -159,14 +167,13 @@ static NSString * const reuseIdentifier = @"socialItemCell";
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
 	
+	// Calculate content width of items including padding between
 	NSInteger numItems = [self collectionView:collectionView numberOfItemsInSection:section];
-	
 	NSInteger itemWidth = ((UICollectionViewFlowLayout*)collectionViewLayout).itemSize.width;
-	
-	NSInteger viewWidth = collectionView.bounds.size.width;
-	
 	CGFloat contentWidth = numItems * itemWidth + (numItems - 1) * HORIZONTAL_PADDING;
 	
+	// Calculate remainder space in view and share on both ends equally
+	NSInteger viewWidth = collectionView.bounds.size.width;
 	CGFloat leftInset = (viewWidth - contentWidth) / 2;
 	CGFloat rightInset = leftInset;
 	

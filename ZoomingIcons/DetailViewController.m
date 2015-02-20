@@ -8,31 +8,58 @@
 
 #import "DetailViewController.h"
 
+
+#
+# pragma mark - Interface
+#
+
+
 @interface DetailViewController ()
 
 @end
 
+
+#
+# pragma mark - Implementation
+#
+
+
 @implementation DetailViewController
+
+
+#
+# pragma mark UIViewController
+#
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+	
+	self.socialItemImageView.image = self.socialItem.image;
+	self.socialItemView.backgroundColor = self.socialItem.color;
+	self.socialItemNameLabel.text = self.socialItem.name;
+	self.socialItemSummaryLabel.text = self.socialItem.summary;
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+/*
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
 */
+
+
+#
+# pragma mark Action Handlers
+#
 
 
 - (IBAction)backPressed:(UIButton *)sender {

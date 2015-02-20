@@ -116,6 +116,10 @@
                     </view>
                     <connections>
                         <outlet property="backButtton" destination="ZjM-Oc-Mk7" id="ylV-JW-T4u"/>
+                        <outlet property="socialItemImageView" destination="I7x-jW-nSX" id="oBM-4Y-CVj"/>
+                        <outlet property="socialItemNameLabel" destination="0Uh-6c-hif" id="w5a-wX-vdO"/>
+                        <outlet property="socialItemSummaryLabel" destination="whm-RW-Gt9" id="Mog-bv-cHP"/>
+                        <outlet property="socialItemView" destination="leC-wt-pkD" id="rd1-l3-Cyg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m29-Br-N1a" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -13,6 +13,6 @@
 # pragma mark - Interface
 #
 
-@interface ZoomingIconTransition : NSObject <UIViewControllerAnimatedTransitioning, UINavigationControllerDelegate>
+@interface ZoomingIconTransition : NSObject <UINavigationControllerDelegate, UIViewControllerAnimatedTransitioning>
 
 @end
