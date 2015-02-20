@@ -133,10 +133,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="delegate" destination="NzC-rm-8av" id="zeM-Qi-j6L"/>
                         <segue destination="gfO-eh-XS3" kind="relationship" relationship="rootViewController" id="oex-tM-XjW"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l73-KB-ZSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="NzC-rm-8av" customClass="ZoomingIconTransition"/>
             </objects>
             <point key="canvasLocation" x="488" y="331"/>
         </scene>

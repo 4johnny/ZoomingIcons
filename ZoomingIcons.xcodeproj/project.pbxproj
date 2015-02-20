@@ -12,6 +12,7 @@
 		B22F192D1A96ADED0078FCD5 /* Zooming-Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22F192B1A96ADED0078FCD5 /* Zooming-Icons.xcassets */; };
 		B22F19301A96C60B0078FCD5 /* SocialItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B22F192F1A96C60B0078FCD5 /* SocialItem.m */; };
 		B22F19341A970EAB0078FCD5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22F19331A970EAB0078FCD5 /* DetailViewController.m */; };
+		B22F19371A971D9A0078FCD5 /* ZoomingIconTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B22F19361A971D9A0078FCD5 /* ZoomingIconTransition.m */; };
 		B2C5102A1A96909D00239B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C510291A96909D00239B14 /* main.m */; };
 		B2C5102D1A96909D00239B14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C5102C1A96909D00239B14 /* AppDelegate.m */; };
 		B2C510331A96909D00239B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C510311A96909D00239B14 /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 		B22F192F1A96C60B0078FCD5 /* SocialItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialItem.m; sourceTree = "<group>"; };
 		B22F19321A970EAB0078FCD5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B22F19331A970EAB0078FCD5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B22F19351A971D9A0078FCD5 /* ZoomingIconTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomingIconTransition.h; sourceTree = "<group>"; };
+		B22F19361A971D9A0078FCD5 /* ZoomingIconTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomingIconTransition.m; sourceTree = "<group>"; };
 		B2C510241A96909D00239B14 /* ZoomingIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomingIcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C510281A96909D00239B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2C510291A96909D00239B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				B22F19251A9693D60078FCD5 /* MenuViewController.m */,
 				B22F19271A96A9E00078FCD5 /* SocialItemCell.h */,
 				B22F19281A96A9E00078FCD5 /* SocialItemCell.m */,
+				B22F19351A971D9A0078FCD5 /* ZoomingIconTransition.h */,
+				B22F19361A971D9A0078FCD5 /* ZoomingIconTransition.m */,
 				B22F19321A970EAB0078FCD5 /* DetailViewController.h */,
 				B22F19331A970EAB0078FCD5 /* DetailViewController.m */,
 				B2C510311A96909D00239B14 /* Main.storyboard */,
@@ -251,6 +256,7 @@
 				B22F19291A96A9E00078FCD5 /* SocialItemCell.m in Sources */,
 				B2C5102A1A96909D00239B14 /* main.m in Sources */,
 				B22F19261A9693D60078FCD5 /* MenuViewController.m in Sources */,
+				B22F19371A971D9A0078FCD5 /* ZoomingIconTransition.m in Sources */,
 				B22F19341A970EAB0078FCD5 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
