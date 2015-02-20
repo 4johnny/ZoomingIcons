@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#
+# pragma mark - Interface
+#
+
 @interface MenuViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout>
 
 @end

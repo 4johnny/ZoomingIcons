@@ -8,7 +8,18 @@
 
 #import "SocialItemCell.h"
 
+
+#
+# pragma mark - Implementation
+#
+
+
 @implementation SocialItemCell
+
+
+#
+# pragma mark UIView
+#
 
 
 - (void)layoutSubviews {

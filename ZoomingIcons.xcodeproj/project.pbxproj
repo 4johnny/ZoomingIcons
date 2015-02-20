@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		B22F19261A9693D60078FCD5 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22F19251A9693D60078FCD5 /* MenuViewController.m */; };
 		B22F19291A96A9E00078FCD5 /* SocialItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B22F19281A96A9E00078FCD5 /* SocialItemCell.m */; };
-		B22F192C1A96ADED0078FCD5 /* Floating-Heads.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22F192A1A96ADED0078FCD5 /* Floating-Heads.xcassets */; };
 		B22F192D1A96ADED0078FCD5 /* Zooming-Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22F192B1A96ADED0078FCD5 /* Zooming-Icons.xcassets */; };
+		B22F19301A96C60B0078FCD5 /* SocialItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B22F192F1A96C60B0078FCD5 /* SocialItem.m */; };
 		B2C5102A1A96909D00239B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C510291A96909D00239B14 /* main.m */; };
 		B2C5102D1A96909D00239B14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C5102C1A96909D00239B14 /* AppDelegate.m */; };
 		B2C510331A96909D00239B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C510311A96909D00239B14 /* Main.storyboard */; };
@@ -34,8 +34,9 @@
 		B22F19251A9693D60078FCD5 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		B22F19271A96A9E00078FCD5 /* SocialItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialItemCell.h; sourceTree = "<group>"; };
 		B22F19281A96A9E00078FCD5 /* SocialItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialItemCell.m; sourceTree = "<group>"; };
-		B22F192A1A96ADED0078FCD5 /* Floating-Heads.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Floating-Heads.xcassets"; sourceTree = "<group>"; };
 		B22F192B1A96ADED0078FCD5 /* Zooming-Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Zooming-Icons.xcassets"; sourceTree = "<group>"; };
+		B22F192E1A96C60B0078FCD5 /* SocialItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialItem.h; sourceTree = "<group>"; };
+		B22F192F1A96C60B0078FCD5 /* SocialItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialItem.m; sourceTree = "<group>"; };
 		B2C510241A96909D00239B14 /* ZoomingIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomingIcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C510281A96909D00239B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2C510291A96909D00239B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B22F19311A96C6140078FCD5 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				B22F192E1A96C60B0078FCD5 /* SocialItem.h */,
+				B22F192F1A96C60B0078FCD5 /* SocialItem.m */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
 		B2C5101B1A96909D00239B14 = {
 			isa = PBXGroup;
 			children = (
@@ -93,8 +103,7 @@
 				B22F19271A96A9E00078FCD5 /* SocialItemCell.h */,
 				B22F19281A96A9E00078FCD5 /* SocialItemCell.m */,
 				B2C510311A96909D00239B14 /* Main.storyboard */,
-				B22F192A1A96ADED0078FCD5 /* Floating-Heads.xcassets */,
-				B22F192B1A96ADED0078FCD5 /* Zooming-Icons.xcassets */,
+				B22F19311A96C6140078FCD5 /* Data Model */,
 				B2C510271A96909D00239B14 /* Supporting Files */,
 			);
 			path = ZoomingIcons;
@@ -103,6 +112,7 @@
 		B2C510271A96909D00239B14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B22F192B1A96ADED0078FCD5 /* Zooming-Icons.xcassets */,
 				B2C510341A96909D00239B14 /* Images.xcassets */,
 				B2C5102B1A96909D00239B14 /* AppDelegate.h */,
 				B2C5102C1A96909D00239B14 /* AppDelegate.m */,
@@ -212,7 +222,6 @@
 			files = (
 				B2C510331A96909D00239B14 /* Main.storyboard in Resources */,
 				B22F192D1A96ADED0078FCD5 /* Zooming-Icons.xcassets in Resources */,
-				B22F192C1A96ADED0078FCD5 /* Floating-Heads.xcassets in Resources */,
 				B2C510381A96909D00239B14 /* LaunchScreen.xib in Resources */,
 				B2C510351A96909D00239B14 /* Images.xcassets in Resources */,
 			);
@@ -233,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2C5102D1A96909D00239B14 /* AppDelegate.m in Sources */,
+				B22F19301A96C60B0078FCD5 /* SocialItem.m in Sources */,
 				B22F19291A96A9E00078FCD5 /* SocialItemCell.m in Sources */,
 				B2C5102A1A96909D00239B14 /* main.m in Sources */,
 				B22F19261A9693D60078FCD5 /* MenuViewController.m in Sources */,

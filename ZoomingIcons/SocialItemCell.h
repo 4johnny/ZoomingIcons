@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+#
+# pragma mark - Interface
+#
+
 @interface SocialItemCell : UICollectionViewCell
+
+#
+# pragma mark Properties
+#
 
 @property (weak, nonatomic) IBOutlet UIView *socialItemCellView;
 @property (weak, nonatomic) IBOutlet UIImageView *socialItemImageView;
