@@ -140,7 +140,7 @@ static NSString * const reuseIdentifier = @"socialItemCell";
 	// Inject social item data model into detail view controller
 	detailViewController.socialItem = self.socialItems[indexPath.section][indexPath.item];
 
-	SocialItemCell* socialItemCell = (SocialItemCell*)[self collectionView:collectionView cellForItemAtIndexPath:indexPath];
+	SocialItemCell *socialItemCell = (SocialItemCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
 	self.socialItemView = socialItemCell.socialItemCellView;
 	self.socialItemImageView = socialItemCell.socialItemImageView;
 	
